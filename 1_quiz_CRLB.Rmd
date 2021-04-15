@@ -1,0 +1,39 @@
+---
+title: 'Quiz 3: Asymptotics and Efficiency'
+subtitle: "STAT 343: Mathematical Statistics"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Problem 1:
+
+Suppose $X_1,...,X_n \overset{iid}{\sim} Normal(\mu, \theta)$, where $\mu$ in known and $\theta$ is unknown.
+
+- $f(x_i|\mu,\theta)=\frac{1}{\sqrt{2\pi\theta}}\exp\left\{-\frac{1}{2\theta}(x_i-\mu)^2 \right\}$
+
+(a) What is $\ell(\theta|x)$?
+
+\vspace{2cm}
+
+(b) What is $\frac{d}{d\theta}\ell(\theta|x)$?
+
+\vspace{3cm}
+
+(c) What is $\frac{d^2}{d\theta^2}\ell(\theta|x)$?
+
+\vspace{3cm}
+
+(d) What is the (expected) Fisher information $I(\theta_0)$?
+
+\vspace{2cm}
+
+(e) We have shown previously that the sample variance $S^2=\frac{1}{n-1}\sum_{i=1}^n(X_i-\bar{X})^2$ is an unbiased estimator of $\theta$. We also have shown that $\frac{(n-1)S^2}{\sigma^2}\sim \chi^2_{n-1}$. Using these two pieces of information, determine whether $S^2$ attains the Cramer-Rao lower bound. 
+
+\vspace{2cm}
+
+(f) What does your result in (e) mean in terms of efficiency of the estimator $S^2$?
+
+
